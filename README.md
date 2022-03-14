@@ -1,4 +1,7 @@
 # ProjectEular-JavaScript
+JavaScript based Solutions for finding answers to eular problem
+visit this below link to start solving and have fun.
+  - https://projecteuler.net/about 
 
 ## Question 1
 ```
