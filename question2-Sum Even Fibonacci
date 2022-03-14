@@ -1,0 +1,25 @@
+const getFib=(num)=>{
+	if(num === 1 || num === 2){
+  	return num;
+	}else{
+  return getFib(num-1) + getFib(num-2); 
+  }
+}
+
+
+const eveFibo=(n)=> {
+let sum=0;
+const arr = [];
+   while(n>=1){
+    	if(n%2=== 0){
+			sum = sum+getFib(n); 
+      }
+   		/* arr.push(getFib(n)); */
+   		n--;
+ 		}
+    
+    console.log(sum);
+   /*  console.log(arr); */
+ }
+
+eveFibo(4000000);
