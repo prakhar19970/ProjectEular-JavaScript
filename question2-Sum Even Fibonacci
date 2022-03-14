@@ -1,25 +1,19 @@
-const getFib=(num)=>{
-	if(num === 1 || num === 2){
-  	return num;
-	}else{
-  return getFib(num-1) + getFib(num-2); 
-  }
-}
-
-
-const eveFibo=(n)=> {
-let sum=0;
-const arr = [];
-   while(n>=1){
-    	if(n%2=== 0){
-			sum = sum+getFib(n); 
-      }
-   		/* arr.push(getFib(n)); */
-   		n--;
- 		}
-    
+const eveFibo = (n) => {
+    let sum = 0;
+    const arr = [];
+    let m = 1;
+    let x = 2;
+    while (x <= n) {
+        if (x % 2 === 0) {
+            sum = sum + x;
+        }
+            let temp = m + x;
+            m = x;
+            x = temp;
+        arr.push(m);
+    }
+    console.log(arr);
     console.log(sum);
-   /*  console.log(arr); */
- }
+}
 
 eveFibo(4000000);
